@@ -7,6 +7,11 @@ BOM_data <- read_csv("data/BOM_data.csv")
 read_csv("data/BOM_stations.csv")
 BOM_stations <- read_csv("data/BOM_stations.csv")
 
-BOM_stations
+
 BOM_data
 
+BOM_stations
+
+BOM_data %>% 
+  separate(BOM_data, Temp_min_max, into = c("min", "max"), sep = "/")
+  filter(BOM_data, )
